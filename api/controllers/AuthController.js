@@ -6,12 +6,12 @@
  */
 
 module.exports = {
-	register: function(req, res){
+	signup: function(req, res){
         res.view();
     },
 
-    processRegistration: function(req, res){
-
+    processSignup: function(req, res){
+        console.log(req.body);
     },
 
     login: function(req, res){
@@ -19,7 +19,7 @@ module.exports = {
     },
 
     processLogin: function(req, res){
-
+        console.log(req.body);
     }
 };
 

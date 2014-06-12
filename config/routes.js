@@ -28,7 +28,9 @@ module.exports.routes = {
   //
   // (Alternatively, remove this and add an `index.html` file in your `assets` directory)
   'get /': 'AuthController.login',
-  'get /signup': 'AuthController.register'
+  'post /': 'AuthController.processLogin',
+  'get /signup': 'AuthController.signup',
+  'post /signup': 'AuthController.processSignup'
 
 
   // Custom routes here...
